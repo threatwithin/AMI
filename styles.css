@@ -1,0 +1,52 @@
+:root {
+  --bg: #0f1115;
+  --surface: #161a22;
+  --text: #e8ecf1;
+  --muted: #96a0af;
+  --primary: #5aa7ff;
+  --danger: #ff6b6b;
+}
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+.container { max-width: 700px; margin: 24px auto; padding: 0 16px; }
+header h1 { margin: 8px 0; }
+.sub { color: var(--muted); margin: 0; }
+.tiny { color: var(--muted); font-size: 13px; }
+
+.card {
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 16px;
+}
+.hidden { display: none; }
+
+.meme {
+  min-height: 120px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 20px;
+  border-radius: 10px;
+  background: #1e2433;
+}
+.actions { display: flex; gap: 10px; justify-content: center; margin: 16px 0; }
+.btn {
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  background: #2b3142;
+  color: var(--text);
+}
+.btn.primary { background: var(--primary); }
+.btn.danger { background: var(--danger); }
+.feedback { min-height: 30px; text-align: center; margin-top: 8px; }
+.progress { text-align: right; font-size: 13px; color: var(--muted); }

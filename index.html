@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adversarial Meme Inoculation – Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>Adversarial Meme Inoculation</h1>
+    <p class="sub">Learn to spot manipulative meme tactics.</p>
+  </header>
+
+  <main class="container">
+    <section id="card" class="card hidden">
+      <div class="meme" id="memeText">Loading…</div>
+      <div class="actions">
+        <button id="btnManip" class="btn danger">Manipulative</button>
+        <button id="btnBenign" class="btn">Benign</button>
+      </div>
+      <div id="feedback" class="feedback"></div>
+      <div class="footer">
+        <button id="btnNext" class="btn primary">Next ▶</button>
+        <div id="progress" class="progress">0 / 0</div>
+      </div>
+    </section>
+
+    <section id="summary" class="card hidden">
+      <h2>Session Results</h2>
+      <p id="scoreLine"></p>
+      <ul id="mistakes" class="mistakes"></ul>
+      <button id="btnRestart" class="btn primary">Restart</button>
+    </section>
+
+    <section id="loading" class="card">
+      <p>Preparing your session…</p>
+    </section>
+  </main>
+
+  <footer class="container tiny">
+    <p>All examples are synthetic and for training only.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
